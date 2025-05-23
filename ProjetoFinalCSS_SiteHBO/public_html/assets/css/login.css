@@ -1,0 +1,78 @@
+html, body {
+    margin: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    padding: 24px;
+    background: url("../images/background-movies-series.png");
+    flex: 1;
+}
+
+form {
+    background-color: rgba(211, 211, 211, 0.06);
+    max-width: 800px; 
+    padding: 40px;
+    margin: auto;
+    box-sizing: border-box;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    
+}
+form h1 {
+    text-align: center;
+    margin: 0 0 24px 0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    font-family: "Raleway", sans-serif;
+    color: white;
+}
+form label {
+    font-family: "Raleway", sans-serif;
+    color: white;
+}
+form input {
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    width: auto;
+    padding: 16px;
+    background-color: rgba(211, 211, 211, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    border-radius: 0.5rem;
+    color: #fff;
+}
+form div {
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+#button-entrar {
+    padding: 1rem 2.5rem 1rem 2.5rem;
+    min-height: 0;
+}
+#link-esqueceuSenha {
+    font-size: 16px;
+}
+
+
+
+footer {
+    align-items: center;
+    bottom: 0;
+}
+
+@media screen and (max-width: 400px) {
+    form div {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+}

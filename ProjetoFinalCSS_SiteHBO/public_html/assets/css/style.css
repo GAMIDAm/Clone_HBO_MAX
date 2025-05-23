@@ -1,0 +1,433 @@
+#cabeçalho {
+    background-color: rgba(0,0,0, 0.3);
+    padding: 0.75rem 2.5rem 0.75rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+#cabeçalho img {
+    width: 160px;
+}
+#cabeçalho div {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+#cabeçalhoEntrar {
+    text-decoration: none;
+    color: white;
+    font-size: 0.75rem;
+    font-weight: 700;
+    font-family: "Raleway", sans-serif;
+    letter-spacing: 2px;
+}
+#cabeçalho button {
+    color: white;
+    font-size: 0.75rem;
+    font-weight: 700;
+    font-family: "Raleway", sans-serif;
+    letter-spacing: 2px;
+    border: none;
+    border-radius: 1.5rem;
+    background: rgb(181, 53, 246);
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+}
+
+main {
+    margin-top: 62px;
+}
+
+.header-section {
+    background: linear-gradient(-45deg, #56125b, #0f0f10, #271e6e);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite alternate;
+}
+#content {
+    padding: 100px 40px 0 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+#content-canais {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+#content-canais img {
+    object-fit: contain;
+}
+#content-title {
+    color: white;
+    font-family: "Raleway", sans-serif;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+}
+#content-title h1{
+    margin: 0;
+}
+#content-title span {
+    font-size: 2rem;
+    font-weight: 400;
+    display: block;
+}
+.divider {
+    width: 262.5px;
+    height: 5px;
+    width: 70%;
+    max-width: 700px;
+    display: flex;
+    background: linear-gradient(90deg, rgb(85, 22, 186), rgba(255, 0, 229, 0.5) 80%);
+}
+#content-assinaturasPreço p:nth-child(1) {
+    color: white;
+    font-family: "Quicksand", sans-serif;
+    font-size: 1.25rem;
+    margin: 0;
+    text-align: center;
+}
+#content-assinaturasPreço p:nth-child(2) {
+    color: white;
+    font-family: "Raleway", sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0;
+}
+#content-assinaturasPreço span {
+    font-size: initial;
+    font-weight: 300;
+}
+#content-btnAssine {
+    width: 243.385px;
+    height: 51.3333px;
+    border-radius: 1.5rem;
+    border: none;
+    color: white;
+    background: linear-gradient(45deg, rgb(155, 52, 239) 0%, rgb(73, 12, 176) 20%, rgba(0, 0, 0, 0) 50%);
+    background-size: 250%;
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: "Raleway", sans-serif;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    animation: wiggle 2.5s linear infinite;
+}
+#content-infoPlano {
+    color: white;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 300;
+    text-align: center;
+    max-width: 300px;
+    margin: 0;
+}
+
+.header-sectionAfter {
+    content: "";
+    width: 100%;
+    height: 250px;
+    bottom: 0;
+    background: linear-gradient(0deg, #020228, transparent);
+}
+
+#section-planos {
+    padding: 1.5rem;
+    margin: 0 36px;
+}
+#section-planos h2, #section-contents h2 {
+    color: white;
+    font-family: "Raleway", sans-serif;
+    font-size: 2rem;
+    margin: 0;
+    font-weight: 500;
+    text-align: center;
+}
+#section-planosCards {
+    margin: 40px 0 40px 0;
+    display: flex;
+    gap: 80px;
+    perspective: 2000px;
+    perspective-origin: top;
+}
+.card-plan {
+    padding: 40px 60px 40px 60px;
+    border-radius: 8px;
+    color: white;
+    font-family: "Raleway", sans-serif;
+    text-align: center;
+    background: linear-gradient(0deg, transparent, #3b1e63);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 500px;
+    transition: transform 1s ease-in-out;
+}
+.card-planTitulo {
+    display: flex;
+    justify-content: space-between;
+}
+.card-plan h3 {
+    font-size: 1.46rem;
+    margin: 0;
+}
+.card-plan p{
+    color: rgb(255, 0, 229);
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0;
+}
+.card-plan span {
+    font-size: initial;
+    font-weight: 300;
+    color: white;
+}
+.card-plan li {
+    text-align: left;
+    font-size: 1.25rem;
+    margin-bottom: 14px;
+    padding-left: 14px;
+}
+.card-plan button, form button {
+    font-family: "Raleway", sans-serif;
+    padding: 1rem 2.5rem 1rem 2.5rem;
+    min-height: 64px;
+    border-radius: 2rem;
+    border: none;
+    color: white;
+    background: linear-gradient(45deg, rgb(155, 52, 239) 0%, rgb(73, 12, 176) 20%, rgba(0, 0, 0, 0) 50%);
+    background-size: 250%;
+    font-weight: 700;
+    font-stretch: 100%;
+    letter-spacing: 4px;
+    text-align: center;
+    text-transform: uppercase;
+}
+#section-planosCards:has(.card-plan:nth-child(1):hover)
+.card-plan:nth-child(2) {
+    transform: rotateY(-35deg);
+}
+
+#section-planosCards:has(.card-plan:nth-child(2):hover)
+.card-plan:nth-child(1) {
+    transform: rotateY(35deg);
+}
+
+#section-contents {
+    padding: 1.5rem;
+    margin: 100px 36px;
+}
+#section-contents h2 {
+    text-align: left;
+}
+#contents {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 40px;
+    gap: 40px;
+}
+.contents-card img {
+    width: 100%;
+    object-fit: cover;
+    box-sizing: border-box;
+    border-radius: 1.5rem;
+    transition: 2s;
+    transition-timing-function: linear;
+}
+.contents-card {
+    transition: 2s;
+    transition-timing-function: linear;
+}
+.contents-card:hover {
+    img {
+        opacity: 0.0;
+        transition: 2s;
+    }
+    scale: 1.1;
+    background-clip: border-box;
+    background-size: cover;
+    transition: 2s;
+}
+#card-hbo:hover {
+    background-image: url("../images/hbo-hover_0.webp");
+}
+#card-max:hover {
+    background-image: url("../images/MAX-Hover.webp");
+}
+#card-dc:hover {
+    background-image: url("../images/DC-Hover.webp");
+}
+#card-wb:hover {
+    background-image: url("../images/WB-Hover.webp");
+}
+#card-cn:hover {
+    background-image: url("../images/CN-Hover.png");
+}
+#card-ucl:hover {
+    background-image: url("../images/UCL-Hover.webp");
+}
+
+footer {
+    margin: 0 36px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+}
+#footer-linksMax {
+    display: flex;
+
+}
+#footer-linksMax a, form a {
+    margin: 0 14px;
+    color: rgb(158, 134, 255);
+    text-decoration: none;
+    font-family: "Raleway", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+footer p {
+    color: rgb(158, 134, 255);
+    font-family: "Quicksand", sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+}
+#footer-socialLinks {
+    margin-top: 80px;
+    display: flex;
+    column-gap: 40px;
+    justify-content: center;
+}
+
+@media screen and (max-width: 820px) {
+    #cabeçalho {
+        padding: 2rem 1.5rem 2rem 0;
+        gap: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    #cabeçalho div {
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+    }
+    #cabeçalho img {
+        width: 100px;
+    }
+
+
+
+    main {
+        margin-top: 134px;
+    }
+
+    #content-canais {
+        flex-wrap: wrap;
+        gap: 1.5rem
+    }
+
+    #section-planos {
+        padding: 1.5rem;
+    }
+    #section-planosCards {
+        margin: 40px 0 40px 0;
+        flex-direction: column;
+        row-gap: 40px;
+    }
+    .card-plan {
+        padding: 40px 40px 40px 40px;
+        display: flex;
+        flex-direction: column;
+    }
+    .card-planTitulo {
+        flex-direction: column;
+    }
+    .card-plan li {
+        margin-bottom: 14px;
+        padding-left: 14px;
+        text-align: initial;
+    }
+
+    #section-contents {
+        padding: 1.5rem;
+        margin: 0;
+    }
+    #contents {
+        border-radius: 1.5rem;
+        display: grid;
+        grid-template-columns: repeat(6, 100%);
+        grid-auto-flow: column;
+        overflow: auto hidden;
+        max-height: 586px;
+        gap: 32px;
+    }
+    .contents-card img {
+        width: 100%;
+        object-fit: cover;
+        box-sizing: border-box;
+        border-radius: 1.5rem;
+    }
+
+    footer {
+        align-items: center;
+    }
+    #footer-linksMax {
+        flex-direction: column;
+        align-items: center;
+    }
+    #footer-linksMax a {
+        margin: 0 14px 16px 14px;
+    }
+    footer p {
+        text-align: center;
+    }
+    #footer-socialLinks {
+        margin-top: 80px;
+        display: flex;
+    }
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes wiggle {
+    0% {
+        transform: rotate(0);
+    }
+    15% {
+        transform: rotate(-10deg);
+    }
+    20% {
+        transform: rotate(10deg);
+    }
+    25% {
+        transform: rotate(-10deg);
+    }
+    30% {
+        transform: rotate(10deg);
+    }
+    35% {
+        transform: rotate(-10deg);
+    }
+    40%, 100% {
+        transform: rotate(0);
+    }
+}
